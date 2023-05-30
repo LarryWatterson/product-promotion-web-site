@@ -31,9 +31,6 @@
             <v-btn  icon color="white" v-else to="/login">
                 <v-icon>mdi-account-circle</v-icon>
             </v-btn>
-            <v-btn icon color="white">
-                <v-icon>mdi-cart</v-icon>
-            </v-btn>
         </v-toolbar-items>
     </v-app-bar>
 </template>

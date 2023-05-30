@@ -35,6 +35,18 @@
                                 </v-btn>
                             </v-col>
                         </v-row>
+
+                        <v-dialog v-model="showDialog" max-width="500px">
+                            <v-card>
+                                <v-card-title class="headline">Info</v-card-title>
+                                <v-card-text>
+                                    {{ message }}
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-btn color="primary"  @click="showDialog = false">Close</v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-dialog>
                     </div>
                 </v-col>
             </v-row>
@@ -51,7 +63,9 @@ export default {
                 surname: "",
                 email: ""
             },
-            isLoad: false
+            isLoad: false,
+            message: null,
+            showDialog: false
         }
     },
     methods: {
@@ -78,7 +92,8 @@ export default {
                   email: this.accountDetails.email
               })
               .then(response => {
-                  console.log(response.data)
+                  this.message = response.data.message
+                  this.showDialog = true
               })
               .catch(err => {
                   console.log(err)
