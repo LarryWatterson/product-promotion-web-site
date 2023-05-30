@@ -1,8 +1,8 @@
 <template>
     <v-app-bar color="#333333" app absolute>
         <v-toolbar-items>
-            <v-btn text to="/" color="white">Home</v-btn>
-            <v-btn text to="/products" color="white">Products</v-btn>
+            <v-btn to="/" color="white">Home</v-btn>
+            <v-btn to="/products" color="white">Products</v-btn>
 <!--            <v-btn color="white">Contact</v-btn>-->
         </v-toolbar-items>
         <v-spacer />
