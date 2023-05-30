@@ -1,5 +1,5 @@
 # <Product Promotion Page>
-## 🏆 How to run?
+## 🔧 Setting up Local Development
 ```
 $ cd .\server\
 $ npm install
@@ -10,6 +10,8 @@ $ cd ..\client\
 $ npm install
 $ npm run dev
 ```
+## 📜 Prerequirement
+* [MySQL](https://www.mysql.com/)
+
 ## 🗺️ Credits
-* You must install the MySQL
-* If you wish you can create database for free on https://www.db4free.net/index.php?language=en
+* If you wish, you can create free testing database on [db4free](https://www.db4free.net/index.php)
